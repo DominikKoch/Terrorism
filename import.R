@@ -20,13 +20,6 @@ import.wikipedia <- function(month, year, verbose = TRUE){
       read_html %>%
       html_nodes("table")
   
-  # # Prevent bug due to cleanup info box
-  # if (length(tmp) == 4) {
-  #   df <- (as.data.frame(html_table(tmp[2], fill = TRUE)))
-  # } else {
-  #   df <- (as.data.frame(html_table(tmp[1], fill = TRUE)))
-  # }
-  
   # find the terrorIncidents table
   df <- (as.data.frame(html_table(tmp[grep("terrorInc",html_attrs(tmp))], fill = TRUE)))
 
