@@ -1,39 +1,11 @@
 
 # Todo:
 
-
 # - information tab
 # - Infoboxes
-
 # - Types filter
 # - Options Tab (colour selection, size selection)
-
-# Done
-
-# - ciruclar legend
-# - leaflet minimap
-# - Infoboxes
-# - validate & need
-# - UI layout
-# - Popups
-# - Weltkugel
-# - https://www.mapbox.com
-# - mapbox attribution (https://www.mapbox.com/help/how-attribution-works/#mapbox-wordmark)
-# - timevis
-#   - http://visjs.org/docs/timeline/#Configuration_Options
-#   - https://github.com/daattali/timevis
-# - timevis/leaflet selection highlight
-#   - leafletproxy (https://rstudio.github.io/leaflet/shiny.html)
-# - shiny globe zoom crash (switched back to shinyglobe)
-# - shinyapps.io
-# - Datenaufbereitung auslagern
-# - fixed colors
-# - fixed legend order
-# - only one active popup
-# - added leaflet maxBounds
-# - leaflet double legend
-# - leaflet filter Perpetrator update
-# - github
+# - Take Tour
 
 # Load packages -----------------------------------------------------------
 
