@@ -19,6 +19,8 @@ dashboardPage(
       
       tags$style(HTML('section.sidebar .shiny-input-container {padding: 0px 15px 0px 15px;}')),
       
+      tags$style(HTML('.content-wrapper, .right-side {background-color: #222D32;}')),
+      
       # Infobox style
       
       tags$style(HTML('.small-box {min-height: 30px; border-radius: 5px; margin-bottom: 10px;}
