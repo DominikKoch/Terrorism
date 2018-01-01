@@ -2,7 +2,6 @@
 # Todo:
 
 # - information tab
-# - Infoboxes
 # - Types filter
 # - Options Tab (colour selection, size selection)
 # - Take Tour

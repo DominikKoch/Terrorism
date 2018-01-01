@@ -15,6 +15,19 @@ dashboardPage(
     
     tags$head(
       
+      # Sidebar style
+      
+      tags$style(HTML('section.sidebar .shiny-input-container {padding: 0px 15px 0px 15px;}')),
+      
+      # Infobox style
+      
+      tags$style(HTML('.small-box {min-height: 30px; border-radius: 5px; margin-bottom: 10px;}
+                      .glyphicon {font-size: 50px;}
+                      .icon-large {font-size: 50px !important;}
+                      .small-box h3 {font-size: 24px;}
+                      .small-box p {font-size: 14px; font-weight: 700;}
+                      .small-box .inner {padding-top: 10px; padding-bottom: 5px;}')),
+      
       # Leaflet Legend Circular style
       
       tags$style(type = "text/css", "html, body {width:100%;height:100%}",
@@ -132,11 +145,14 @@ dashboardPage(
     
     hr(style = "margin: 15px;"),
     
-    tableOutput("myTable"),
-
+    valueBoxOutput("InjuredBox", width = 12),
+    valueBoxOutput("DeadBox", width = 12),
+    valueBoxOutput("IncidentsBox", width = 12),
+    
     hr(style = "margin: 15px;"),
     
     actionButton("myTakeTour", "Take Tour", icon = icon("question-circle"), style = action_btn_style)
+    
   ),
   
   # Body --------------------------------------------------------------------

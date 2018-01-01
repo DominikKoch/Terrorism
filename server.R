@@ -3,6 +3,9 @@ shinyServer(function(input, output, session) {
   
   # Reactive ----------------------------------------------------------------
   
+  # incidents statistics
+  incidentsStats <- reactiveValues()
+  
   # Filter for Perpetrator groups
   filterPerpetrators_rows <- eventReactive(input$filterPerpetrator, {
     if (length(input$filterPerpetrator) > 0) {
@@ -39,9 +42,9 @@ shinyServer(function(input, output, session) {
                 options = popupOptions(closeOnClick = TRUE))
   })
   
-  # Table -------------------------------------------------------------------
+  # Update Incidents stats
   
-  output$myTable <- renderTable({ 
+  observe({ 
     
     # default if no perpetrator filter is set
     if (length(input$filterPerpetrator) == 0) {
@@ -57,14 +60,13 @@ shinyServer(function(input, output, session) {
                 KPI.injured = sum(Injured),
                 KPI.fatalities = sum(Dead))
     
-    data.frame(feature = c("Incidents:", "Injured:", "Fatalities:"),
+    stats <- data.frame(feature = c("Incidents:", "Injured:", "Fatalities:"),
                values = prettyNum(c(df.table$KPI.incidents, df.table$KPI.injured, df.table$KPI.fatalities), big.mark = ".", decimal.mark = ","))
     
-  },  
-    spacing = 'xs',  
-    colnames = FALSE,
-    digits = 0
-  ) 
+    incidentsStats$Incidents <- stats$values[1]
+    incidentsStats$Injured <- stats$values[2]
+    incidentsStats$Fatalities <- stats$values[3]
+  })
 
   # Leaflet -----------------------------------------------------------------
 
@@ -218,7 +220,31 @@ shinyServer(function(input, output, session) {
 
   })
   
+  # Infoboxes ---------------------------------------------------------------
+  
+  output$InjuredBox <- renderInfoBox({
+    valueBox(
+      incidentsStats$Injured, "Injured", icon = icon("tint", lib = "glyphicon"),
+      color = "yellow"
+    )
+  })
+  
+  output$DeadBox <- renderInfoBox({
+    valueBox(
+      incidentsStats$Fatalities, "Fatalities", icon = icon("bomb", lib = "font-awesome"),
+      color = "yellow"
+    )
+  })
+  
+  output$IncidentsBox <- renderInfoBox({
+    valueBox(
+      incidentsStats$Incidents, "Incidents", icon = icon("hashtag", lib = "font-awesome"),
+      color = "yellow"
+    )
+  })
+  
 })
+
 
 
 
