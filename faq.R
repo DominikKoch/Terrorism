@@ -1,0 +1,17 @@
+bsCollapse(id = "faq",
+  bsCollapsePanel("Where does the data come from?",
+                           p("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", style="text-align: justify;"),
+    a("Intergovernmental Panel on Climate Change GCM guide",
+      href="http://www.ipcc-data.org/guidelines/pages/gcm_guide.html", target="_blank"),
+    style="info"),
+  bsCollapsePanel("How many times is the data updated?",
+                  p("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", style="text-align: justify;"),
+                  a("Intergovernmental Panel on Climate Change GCM guide",
+                    href="http://www.ipcc-data.org/guidelines/pages/gcm_guide.html", target="_blank"),
+                  style="info"),
+  bsCollapsePanel("How did you make this app?",
+    p("ERA 40 is a climate reanalysis data set.", style="text-align: justify;"),
+    a("ERA 40 summary and data access",
+      href="https://climatedataguide.ucar.edu/climate-data/era40", target="_blank"),
+      style="info")
+)
