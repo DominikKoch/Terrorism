@@ -57,6 +57,43 @@ df$myPopup <- paste0("<strong>Date: </strong>",
 # Actionbutton
 action_btn_style <- "color: black; margin: 10px 15px 10px 15px; width: 200px;"
 
+# Create own color palette
+myColors <- c("Unknown/Others" = "#F2F2F2",
+              "Taliban"        = "#FF0000",
+              "PKK"            = "#0000FF",
+              "Lone Wolf"      = "#FF00FF",
+              "Islamic State"  = "#FF8000",
+              "Boko Haram"     = "#FFFF00",
+              "Al-Shabaab"     = "#00FF00",
+              "Al-Qaeda"       = "#00FFFF")
+
+myRGBA   <- c("Taliban"        = "rgba(255, 0, 0, 0.5)",
+              "PKK"            = "rgba(0, 0, 255, 0.5)",
+              "Unknown/Others" = "rgba(242,242,242, 0.5)",
+              "Lone Wolf"      = "rgba(255, 0, 255, 0.5)",
+              "Islamic State"  = "rgba(255, 128, 0, 0.5)",
+              "Boko Haram"     = "rgba(255, 255, 0, 0.5)",
+              "Al-Shabaab"     = "rgba(0, 255, 0, 0.5)",
+              "Al-Qaeda"       = "rgba(0, 255, 255, 0.5)")
+
+# myColors <- c("Unknown/Others" = "#999999",
+#               "Lone Wolf"      = "#663000",
+#               "Islamic State"  = "#E61A33",
+#               "Boko Haram"     = "#664CFF",
+#               "Taliban"        = "#FF8000",
+#               "Al-Shabaab"     = "#FFFF33",
+#               "PKK"            = "#33FF00",
+#               "Al-Qaeda"       = "#1AB2FF")
+# 
+# myRGBA   <- c("Unknown/Others" = "rgba(102, 48, 0, 0.5)",
+#               "Lone Wolf"      = "rgba(230, 26, 51, 0.5)",
+#               "Islamic State"  = "rgba(153, 153, 153, 0.5)",
+#               "Boko Haram"     = "rgba(102, 76, 255, 0.5)",
+#               "Taliban"        = "rgba(255, 128, 0, 0.5)",
+#               "Al-Shabaab"     = "rgba(255, 255, 51, 0.5)",
+#               "PKK"            = "rgba(51, 255, 0, 0.5)",
+#               "Al-Qaeda"       = "rgba(26, 178, 255, 0.5)")
+
 # Custom functions --------------------------------------------------------
 
 # Add circular legend to leaflet

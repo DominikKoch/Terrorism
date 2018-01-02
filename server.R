@@ -71,7 +71,7 @@ shinyServer(function(input, output, session) {
   # Leaflet -----------------------------------------------------------------
 
   df$color <- df$Perpetrator
-  factpal <- colorFactor(rev(c('#999999','#663000','#E61A33','#664CFF','#FF8000','#FFFF33','#33FF00','#1AB2FF')), domain = levels(df$color), ordered = FALSE)
+  factpal <- colorFactor(rev(myColors), domain = levels(df$color), ordered = FALSE)
   
   output$mymap <- renderLeaflet({
     
@@ -204,9 +204,8 @@ shinyServer(function(input, output, session) {
     df.timeline$group <- as.numeric(df.timeline$Perpetrator)
     
     df.timeline$style <- df.timeline$Perpetrator
-    levels(df.timeline$style) <- paste( "background-color: ", rev(c('rgba(102, 48, 0, 0.5)','rgba(230, 26, 51, 0.5)',"rgba(153, 153, 153, 0.5)",'rgba(102, 76, 255, 0.5)','rgba(255, 128, 0, 0.5)','rgba(255, 255, 51, 0.5)','rgba(51, 255, 0, 0.5)','rgba(26, 178, 255, 0.5)')), ";", sep = "")
-    # levels(df.timeline$style) <- paste( "background-color: ", rev(c('#663000','#E61A33','#999999','#664CFF','#FF8000','#FFFF33','#33FF00','#1AB2FF')), ";", sep = "")
-    
+    levels(df.timeline$style) <- paste( "background-color: ", rev(myRGBA), ";", sep = "")
+
     timevis(df.timeline, 
             #groups = data.frame(id = as.numeric(unique(df.timeline$Perpetrator)), content = unique(df.timeline$Perpetrator)),
             fit = FALSE, showZoom = FALSE,

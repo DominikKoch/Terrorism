@@ -50,27 +50,27 @@ dashboardPage(
       
       tags$style(HTML("
                       .item[data-value=\"Al-Qaeda\"] {
-                      background: rgba(26, 178, 255, 0.5) !important;
+                      background: rgba(0, 255, 255, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       .option[data-value=\"Al-Qaeda\"] {
-                      background: rgba(26, 178, 255, 0.5) !important;
+                      background: rgba(0, 255, 255, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       .item[data-value=\"Al-Shabaab\"] {
-                      background: rgba(51, 255, 0, 0.5) !important;
+                      background: rgba(0, 255, 0, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       .option[data-value=\"Al-Shabaab\"] {
-                      background: rgba(51, 255, 0, 0.5) !important;
+                      background: rgba(0, 255, 0, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       .item[data-value=\"Boko Haram\"] {
-                      background: rgba(255, 255, 51, 0.5) !important;
+                      background: rgba(255, 255, 0, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       .option[data-value=\"Boko Haram\"] {
-                      background: rgba(255, 255, 51, 0.5) !important;
+                      background: rgba(255, 255, 0, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       .item[data-value=\"Islamic State\"] {
@@ -82,35 +82,35 @@ dashboardPage(
                       color: #2B2B2B !important;
                       }
                       .item[data-value=\"Lone Wolf\"] {
-                      background: rgba(102, 76, 255, 0.5) !important;
+                      background: rgba(255, 0, 255, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       .option[data-value=\"Lone Wolf\"] {
-                      background: rgba(102, 76, 255, 0.5) !important;
+                      background: rgba(255, 0, 255, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       .item[data-value=\"PKK\"] {
-                      background: rgba(230, 26, 51, 0.5) !important;
+                      background: rgba(0, 0, 255, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       .option[data-value=\"PKK\"] {
-                      background: rgba(230, 26, 51, 0.5) !important;
+                      background: rgba(0, 0, 255, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       .item[data-value=\"Taliban\"] {
-                      background: rgba(102, 48, 0, 0.5) !important;
+                      background: rgba(255, 0, 0, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       .option[data-value=\"Taliban\"] {
-                      background: rgba(102, 48, 0, 0.5) !important;
+                      background: rgba(255, 0, 0, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       .item[data-value=\"Unknown/Others\"] {
-                      background: rgba(153, 153, 153, 0.5) !important;
+                      background: rgba(242,242,242, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       .option[data-value=\"Unknown/Others\"] {
-                      background: rgba(153, 153, 153, 0.5) !important;
+                      background: rgba(242,242,242, 0.5) !important;
                       color: #2B2B2B !important;
                       }
                       "))
@@ -195,8 +195,11 @@ dashboardPage(
       tabItem(tabName = "menuInfo",
         box(title = "About this application", 
             width = 12, status = "warning", solidHeader = TRUE, collapsible = TRUE, collapsed = FALSE,
-            p("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", style = "text-align:justify"),
-            p("At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", style = "text-align:justify")
+            p("Since the rise and fall of the Islamic State of Iraq and the Levant (ISIS), almost no day passes without another terror attack in some part of the world.", style = "text-align:justify"),
+            # nur ein Bruchteil hiervon in unseren Medien (wenn der Westen betroffen ist)
+            # Alltag im Nahen osten oder Afrika
+            # fokus auf einige gruppen
+            p("data since 2015", style = "text-align:justify")
         ),
         box(title = "Frequently asked questions", 
             width = 12, status = "warning", solidHeader = TRUE, collapsible = TRUE, collapsed = FALSE,
