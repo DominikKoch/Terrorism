@@ -5,9 +5,9 @@ account: datascience42
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 252161
-bundleId: 1156764
+bundleId: 1187839
 url: https://datascience42.shinyapps.io/terrorism/
-when: 1514715456.74378
+when: 1516661557.77975
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: others.R|population.Rds|data/data_cleaned - Kopie.csv|data/data_cleaned.csv|data/data_raw.csv|data/geocoded.RData|data/raw/2015-April.csv|data/raw/2015-August.csv|data/raw/2015-December.csv|data/raw/2015-February.csv|data/raw/2015-January.csv|data/raw/2015-July.csv|data/raw/2015-June.csv|data/raw/2015-March.csv|data/raw/2015-May.csv|data/raw/2015-November.csv|data/raw/2015-October.csv|data/raw/2015-September.csv|data/raw/2016-April.csv|data/raw/2016-August.csv|data/raw/2016-December.csv|data/raw/2016-February.csv|data/raw/2016-January.csv|data/raw/2016-July.csv|data/raw/2016-June.csv|data/raw/2016-March.csv|data/raw/2016-May.csv|data/raw/2016-November.csv|data/raw/2016-October.csv|data/raw/2016-September.csv|data/raw/2017-April.csv|data/raw/2017-August.csv|data/raw/2017-December.csv|data/raw/2017-February.csv|data/raw/2017-January.csv|data/raw/2017-July.csv|data/raw/2017-June.csv|data/raw/2017-March.csv|data/raw/2017-May.csv|data/raw/2017-November.csv|data/raw/2017-October.csv|data/raw/2017-September.csv
+ignoredFiles: others.R|data/data_cleaned - Kopie.csv|data/data_cleaned.csv|data/data_raw.csv|data/geocoded.RData|data/raw/2015-April.csv|data/raw/2015-August.csv|data/raw/2015-December.csv|data/raw/2015-February.csv|data/raw/2015-January.csv|data/raw/2015-July.csv|data/raw/2015-June.csv|data/raw/2015-March.csv|data/raw/2015-May.csv|data/raw/2015-November.csv|data/raw/2015-October.csv|data/raw/2015-September.csv|data/raw/2016-April.csv|data/raw/2016-August.csv|data/raw/2016-December.csv|data/raw/2016-February.csv|data/raw/2016-January.csv|data/raw/2016-July.csv|data/raw/2016-June.csv|data/raw/2016-March.csv|data/raw/2016-May.csv|data/raw/2016-November.csv|data/raw/2016-October.csv|data/raw/2016-September.csv|data/raw/2017-April.csv|data/raw/2017-August.csv|data/raw/2017-December.csv|data/raw/2017-February.csv|data/raw/2017-January.csv|data/raw/2017-July.csv|data/raw/2017-June.csv|data/raw/2017-March.csv|data/raw/2017-May.csv|data/raw/2017-November.csv|data/raw/2017-October.csv|data/raw/2017-September.csv
