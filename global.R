@@ -5,6 +5,12 @@
 # - Types filter
 # - Options Tab (colour selection, size selection)
 # - Take Tour
+# - checkbox suspected
+# - update icons
+#   - https://www.r-bloggers.com/custom-images-for-shiny-dashboard-valuebox-icons/
+#   - https://www.google.de/imgres?imgurl=https%3A%2F%2Fd30y9cdsu7xlg0.cloudfront.net%2Fpng%2F304010-200.png&imgrefurl=https%3A%2F%2Fthenounproject.com%2Fterm%2Fcounting%2F154887%2F&docid=fyPY6rzkqVKzfM&tbnid=Dj5DSxSj3IGEVM%3A&vet=10ahUKEwia1tHT_evYAhVBzKQKHegEDn0QMwiWAigRMBE..i&w=200&h=200&client=firefox-b-ab&bih=931&biw=1280&q=icon%20count&ved=0ahUKEwia1tHT_evYAhVBzKQKHegEDn0QMwiWAigRMBE&iact=mrc&uact=8
+#   - https://www.google.de/search?client=firefox-b-ab&dcr=0&biw=1280&bih=931&tbm=isch&sa=1&ei=YRBmWs25EYfJsAfk16vYDQ&q=icon+patch&oq=icon+patch&gs_l=psy-ab.3..0i30k1j0i8i30k1l9.29958.30568.0.30769.5.5.0.0.0.0.85.387.5.5.0....0...1c.1.64.psy-ab..0.5.386...0j0i67k1.0.1_K44KhqmaM
+#   - https://www.google.de/search?client=firefox-b-ab&dcr=0&biw=1280&bih=931&tbm=isch&sa=1&ei=JhBmWuGkO8HTsAfV0oEo&q=icon+death&oq=icon+death&gs_l=psy-ab.3..0l3j0i8i30k1l7.19078.20923.0.21164.7.6.1.0.0.0.80.458.6.6.0....0...1c.1.64.psy-ab..0.7.463....0.uYwXsn_ik_M
 
 # Load packages -----------------------------------------------------------
 
