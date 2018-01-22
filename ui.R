@@ -195,11 +195,10 @@ dashboardPage(
       tabItem(tabName = "menuInfo",
         box(title = "About this application", 
             width = 12, status = "warning", solidHeader = TRUE, collapsible = TRUE, collapsed = FALSE,
-            p("Since the rise and fall of the Islamic State of Iraq and the Levant (ISIS), almost no day passes without another terror attack in some part of the world.", style = "text-align:justify"),
-            # nur ein Bruchteil hiervon in unseren Medien (wenn der Westen betroffen ist)
-            # Alltag im Nahen osten oder Afrika
-            # fokus auf einige gruppen
-            p("data since 2015", style = "text-align:justify")
+            p("Since the rise and fall of the Islamic State of Iraq and the Levant (ISIS), almost no day passes without another terrorist attack in some part of the world. Though, in western media only a small number of attacks are mentioned. Reports are limited to attacks where countrymen have lost their lives or which were particularly devastating. In the Middle East and parts of Africa however, terror is part of everyday life.", style = "text-align:justify"),
+            p("To highlight these cruel terrorist attacks I plotted all incidents from", min(df$Year), "until today on an interactive leaflet map based on crowdsourced wikipedia data. Each of the", prettyNum(nrow(df), big.mark = ".", decimal.mark = ",") ,"incidents is plotted as an individual circle. The size of the circle correlates to the number of victims and the colour represents the terror organization. I've focused on groups that are currently the most active. The remaining ones were grouped together as 'others'.", style = "text-align:justify"),
+            p("Additional information for every incident can be invoked via a popup by clicking on one of the circles in the map or an item on the timeline. As with any crowdsourced data, it may contain spurious or objectionable data, which I do not take responsibility for. The same data is used to create a fancy webGL globe. This feature is still work in progress and will be changed in future versions.", style = "text-align:justify"),
+            p("Only by looking at all the data at once, you will realize the full extent of global terrorism.", style = "text-align:justify")
         ),
         box(title = "Frequently asked questions", 
             width = 12, status = "warning", solidHeader = TRUE, collapsible = TRUE, collapsed = FALSE,

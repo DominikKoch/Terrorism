@@ -12,7 +12,7 @@ bsCollapse(id = "faq",
   bsCollapsePanel("How many times is the data updated?",
     p("At the moment this is still a manual process due to occasionally messy Wikipedia data. 
       Therefore the data will be updated on a regular basis once per month.
-      I might implement a real time data supply in the future."),
+      I might implement a real time data supply in the future. The last update took place on", max(df$Date)),
     style = "info"),
   
   bsCollapsePanel("How did you make this dashboard?",
